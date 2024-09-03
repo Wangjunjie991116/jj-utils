@@ -42,59 +42,59 @@ module.exports = {
 		],
 
 		/** jsx-eslint/eslint-plugin-react, https://github.com/jsx-eslint/eslint-plugin-react */
-		'react/forbid-prop-types': 'off', // React propTypes 的类型允许出现 any, array, object
-		'react/jsx-no-bind': 'off', // 允许使用 bind 函数
-		'react/prop-types': 'off', // 允许不配置 propTypes
-		'react/jsx-one-expression-per-line': ['off', { allow: 'single-child' }], // 允许一行有一个单独表达式
-		'react/no-multi-comp': 'off', // 允许一个文件中定义多个组件
-		'react/jsx-props-no-spreading': 'off', // 允许定义扩展属性，如 ...props
-		'react/state-in-constructor': 'off', // 允许不在构造函数中定义状态
-		'react/destructuring-assignment': 'warn', // 组件中必须使用结构
-		'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }], // 禁止 jsx 类型不为 jsx tsx 后缀
-		'react/jsx-indent': ['error', 4], // 禁止 jsx 缩进 4 个空格
-		'react/jsx-indent-props': ['error', 4], // 同上，针对 jsx 属性
-		'react/static-property-placement': ['error', 'static public field'], // 禁止静态属性和方法需没定义在类顶部
-		'react/no-danger': 'error', // 禁止使用 angerouslySetInnerHTML
-		'react/jsx-no-target-blank': 'error', // 禁止使用 target="_blank"
-		'react/jsx-no-script-url': 'error', // 禁止 js 脚本链接位 javascript: 或 javascript:void(0)
-		'react/jsx-key': 'error', // map 元素需要填 key
-		'react/jsx-wrap-multilines': [
-			// react jsx 写法控制，是否重起一行
-			'error',
-			{
-				declaration: 'parens-new-line',
-				assignment: 'parens-new-line',
-				return: 'parens-new-line',
-				arrow: 'parens-new-line',
-				condition: 'parens-new-line',
-				logical: 'parens-new-line',
-				prop: 'ignore',
-			},
-		],
-		'react/require-default-props': 'off', // 允许不使用 propTypes
-		'react/react-in-jsx-scope': 'off', // 允许 jsx、tsx 顶部不声明 > import React from 'react'
-		'react/jsx-no-useless-fragment': 'off', // 允许使用空标签
-		'react/no-unstable-nested-components': 'warn', // 使用不稳定的元素嵌套影响性能（保持 warn 报警）
-		'react/function-component-definition': [
-			// 禁止除这几种方式外定义组件函数
-			'error',
-			{
-				namedComponents: ['function-declaration', 'function-expression', 'arrow-function'],
-			},
-		],
-		'react/jsx-no-constructed-context-values': 'error', // 禁止使用 context 的 value 传递没使用 useMemo 包裹
+		// 'react/forbid-prop-types': 'off', // React propTypes 的类型允许出现 any, array, object
+		// 'react/jsx-no-bind': 'off', // 允许使用 bind 函数
+		// 'react/prop-types': 'off', // 允许不配置 propTypes
+		// 'react/jsx-one-expression-per-line': ['off', { allow: 'single-child' }], // 允许一行有一个单独表达式
+		// 'react/no-multi-comp': 'off', // 允许一个文件中定义多个组件
+		// 'react/jsx-props-no-spreading': 'off', // 允许定义扩展属性，如 ...props
+		// 'react/state-in-constructor': 'off', // 允许不在构造函数中定义状态
+		// 'react/destructuring-assignment': 'warn', // 组件中必须使用结构
+		// 'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }], // 禁止 jsx 类型不为 jsx tsx 后缀
+		// 'react/jsx-indent': ['error', 4], // 禁止 jsx 缩进 4 个空格
+		// 'react/jsx-indent-props': ['error', 4], // 同上，针对 jsx 属性
+		// 'react/static-property-placement': ['error', 'static public field'], // 禁止静态属性和方法需没定义在类顶部
+		// 'react/no-danger': 'error', // 禁止使用 angerouslySetInnerHTML
+		// 'react/jsx-no-target-blank': 'error', // 禁止使用 target="_blank"
+		// 'react/jsx-no-script-url': 'error', // 禁止 js 脚本链接位 javascript: 或 javascript:void(0)
+		// 'react/jsx-key': 'error', // map 元素需要填 key
+		// 'react/jsx-wrap-multilines': [
+		// 	// react jsx 写法控制，是否重起一行
+		// 	'error',
+		// 	{
+		// 		declaration: 'parens-new-line',
+		// 		assignment: 'parens-new-line',
+		// 		return: 'parens-new-line',
+		// 		arrow: 'parens-new-line',
+		// 		condition: 'parens-new-line',
+		// 		logical: 'parens-new-line',
+		// 		prop: 'ignore',
+		// 	},
+		// ],
+		// 'react/require-default-props': 'off', // 允许不使用 propTypes
+		// 'react/react-in-jsx-scope': 'off', // 允许 jsx、tsx 顶部不声明 > import React from 'react'
+		// 'react/jsx-no-useless-fragment': 'off', // 允许使用空标签
+		// 'react/no-unstable-nested-components': 'warn', // 使用不稳定的元素嵌套影响性能（保持 warn 报警）
+		// 'react/function-component-definition': [
+		// 	// 禁止除这几种方式外定义组件函数
+		// 	'error',
+		// 	{
+		// 		namedComponents: ['function-declaration', 'function-expression', 'arrow-function'],
+		// 	},
+		// ],
+		// 'react/jsx-no-constructed-context-values': 'error', // 禁止使用 context 的 value 传递没使用 useMemo 包裹
 
-		/** eslint-plugin-jsx-a11y, https://github.com/evcohen/eslint-plugin-jsx-a11y */
-		'jsx-a11y/no-static-element-interactions': 'off', // 允许静态元素上绑定交互事件
-		'jsx-a11y/no-noninteractive-element-interactions': 'off', // 允许非交互元素绑定事件（div、span）
-		'jsx-a11y/click-events-have-key-events': 'off', // 允许绑定点击事件同时不存在需要键盘事件
-		'jsx-a11y/anchor-is-valid': 'off', // 允许保证A标签无效
-		'jsx-a11y/label-has-for': 'off', // 允许表单元素没有对应 label
-		'jsx-a11y/label-has-associated-control': 'off', // 同上
+		// /** eslint-plugin-jsx-a11y, https://github.com/evcohen/eslint-plugin-jsx-a11y */
+		// 'jsx-a11y/no-static-element-interactions': 'off', // 允许静态元素上绑定交互事件
+		// 'jsx-a11y/no-noninteractive-element-interactions': 'off', // 允许非交互元素绑定事件（div、span）
+		// 'jsx-a11y/click-events-have-key-events': 'off', // 允许绑定点击事件同时不存在需要键盘事件
+		// 'jsx-a11y/anchor-is-valid': 'off', // 允许保证A标签无效
+		// 'jsx-a11y/label-has-for': 'off', // 允许表单元素没有对应 label
+		// 'jsx-a11y/label-has-associated-control': 'off', // 同上
 
 		/** eslint-plugin-react-hooks, https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks */
-		'react-hooks/rules-of-hooks': 'error', // 禁止函数组件不在顶层作用域使用 hook
-		'react-hooks/exhaustive-deps': 'error', // 禁止使用 useEffect的 依赖变动项没写全
+		// 'react-hooks/rules-of-hooks': 'error', // 禁止函数组件不在顶层作用域使用 hook
+		// 'react-hooks/exhaustive-deps': 'error', // 禁止使用 useEffect的 依赖变动项没写全
 
 		/** eslint-plugin-import, https://github.com/import-js/eslint-plugin-import */
 		'import/prefer-default-export': 'off', // 允许命名导出，比如 exrpot { test: testModule }

@@ -91,6 +91,7 @@
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^5.2.2"
   },
+  "packageManager": "pnpm@9.9.0",
   "engines": {
     "node": ">= 14.20.0",
     "pnpm": ">= 6.35.1"
