@@ -72,12 +72,6 @@ importers:
       eslint-plugin-jsx-a11y:
         specifier: ^6.8.0
         version: 6.9.0(eslint@8.57.0)
-      eslint-plugin-react:
-        specifier: ^7.34.1
-        version: 7.35.1(eslint@8.57.0)
-      eslint-plugin-react-hooks:
-        specifier: ^4.6.2
-        version: 4.6.2(eslint@8.57.0)
       eslint-plugin-regexp:
         specifier: 1.15.0
         version: 1.15.0(eslint@8.57.0)
